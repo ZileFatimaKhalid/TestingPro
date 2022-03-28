@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: TestingPro_development
+  database: TestingPro_development_1
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -78,8 +78,3 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: TestingPro_production
-  username: TestingPro
-  password: <%= ENV['TESTINGPRO_DATABASE_PASSWORD'] %>
